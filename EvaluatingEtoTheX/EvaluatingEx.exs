@@ -1,8 +1,5 @@
 defmodule EvaluatingEx do
-
-  require IEx
-
-  def eval(),
+  def exec(),
     do:
       read_input()
       |> evaluate_cases()
@@ -35,3 +32,5 @@ defmodule EvaluatingEx do
 
   defp write_output(n), do: Enum.join(n, "\n") |> IO.puts()
 end
+
+EvaluatingEx.exec()
