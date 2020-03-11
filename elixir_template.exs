@@ -27,7 +27,10 @@ defmodule Solution do
       |> String.trim()
       |> String.to_integer()
 
-      defp parse_input(input, _), do: input |> String.trim()
+  defp parse_input(input, _),
+    do:
+      input
+      |> String.trim()
 
   defp write_output(n), do: IO.puts(n)
 end
